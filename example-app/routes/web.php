@@ -15,8 +15,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
-Route::get('/series', [SeriesController::class, 'index']);
+Route::get('/area', [SeriesController::class, 'index']);
+
 

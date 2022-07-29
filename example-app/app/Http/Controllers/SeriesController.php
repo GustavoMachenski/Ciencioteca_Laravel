@@ -14,6 +14,6 @@ class SeriesController extends Controller
             'Electron'
         ];
 
-        return view('listar-series', compact('series'));
+        return view('area/area')->with('series',$series);
     }
 }
