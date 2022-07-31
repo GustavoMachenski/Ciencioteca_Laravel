@@ -10,17 +10,19 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}"/>
 </head>
 <body>
-    <nav class="navbar navbar-inverse">
-		<div class="container-fluid">
-			<div class="justify-content espace-between">
-				<a href="./" class="navbar-brand"><img src="{{ asset('img/ciencioteca.png') }}" alt="Logo site ciencioteca" width="30%"></a>
+	<div class="mb-5">
+		<nav class=" navbar-inverse" >
+			<div class="container-fluid">
+				<div class="justify-content espace-between">
+					<a href="/" class="navbar-brand"><img src="{{ asset('img/ciencioteca.png') }}" alt="Logo site ciencioteca" width="30%"></a>
+				</div>
+				<ul class="flex-row nav navbar-nav navbar-right">
+					<li><a href="cadastre-se.php">Cadastre-se</a></li>
+					<li><a href="login.php">Login</a></li>
+				</ul>
 			</div>
-			<ul class="flex-row nav navbar-nav navbar-right">
-				<li><a href="cadastre-se.php">Cadastre-se</a></li>
-				<li><a href="login.php">Login</a></li>
-			</ul>
-		</div>
-	</nav>
+		</nav>
+	</div>
     {{$slot}}
 </body>
 </html>
